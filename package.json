@@ -1,0 +1,36 @@
+{
+  "name": "healthy",
+  "version": "0.0.1",
+  "description": "to be health",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello charles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangyubjhd/nn.git"
+  },
+  "keywords": [
+    "healthy",
+    "analyse"
+  ],
+  "author": "wangyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangyubjhd/nn/issues"
+  },
+  "homepage": "https://github.com/wangyubjhd/nn#readme",
+  "dependencies": {
+    "angularjs": "0.0.1",
+    "body-parser": "^1.15.2",
+    "coffee-script": "^1.10.0",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "log4js": "^0.6.38",
+    "moment": "^2.14.1",
+    "mongoose": "^4.5.10",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta6",
+    "q": "^1.4.1"
+  }
+}

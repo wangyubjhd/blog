@@ -1,0 +1,64 @@
+doctype html
+html(lang='zh-CN')
+
+block the_header
+    head
+        meta(charset='utf-8')
+        meta(name='renderer', content='webkit')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title 123
+        meta(name='keywords', content='')
+        meta(name='description', content='')
+        link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='css/nprogress.css')
+        link(rel='stylesheet', type='text/css', href='css/style.css')
+        link(rel='stylesheet', type='text/css', href='css/font-awesome.min.css')
+        link(rel='apple-touch-icon-precomposed', href='images/icon.png')
+        link(rel='shortcut icon', href='images/favicon.ico')
+        script(src='js/jquery-2.1.4.min.js')
+        script(src='js/nprogress.js')
+        script(src='js/jquery.lazyload.min.js')
+        block the_script
+
+block the_body
+
+header.header
+    nav#navbar.navbar.navbar-default
+        .container
+            .header-topbar.hidden-xs.link-border
+                | 写真正懂的文章
+            .navbar-header
+                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#header-navbar', aria-expanded='false')
+                    span.sr-only
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                h1.logo.hvr-bounce-in
+                    a(href='＃')
+                        img(src='##########logo#####')
+            #header-navbar.collapse.navbar-collapse
+                form.navbar-form.visible-xs(action='/Search', method='post')
+                    .input-group
+                        input.form-control(type='text', name='keyword', placeholder='请输入关键字', maxlength='20', autocomplete='off')
+                        span.input-group-btn
+                            button.btn.btn-default.btn-search(name='search', type='submit') 搜索
+                ul.nav.navbar-nav.navbar-right
+                    li
+                        a(href='/index') 首页
+
+block the_content
+
+footer.footer
+    .container
+        p
+            | 本站[
+            a(href='#') Blog
+            | ]的部分内容来源于网络，若侵犯到您的利益，请联系站长删除！谢谢！
+            a(href='http://www.miitbeian.gov.cn/', target='_blank', rel='nofollow') [请输入备案号]
+    #gotop
+        a.gotop
+
+script(src='js/bootstrap.min.js')
+script(src='js/jquery.ias.js')
+script(src='js/scripts.js')

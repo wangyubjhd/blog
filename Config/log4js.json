@@ -1,0 +1,16 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "category": "normal",
+      "type": "dateFile",
+      "filename": "Log/normal",
+      "alwaysIncludePattern": true,
+      "pattern": "-yyyy-MM-dd.log",
+      "maxLogSize": 512
+    }
+  ],
+  "replaceConsole": true
+}

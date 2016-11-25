@@ -1,0 +1,17 @@
+{
+  "name": "nn",
+  "description": "to be health",
+  "main": "app.js",
+  "authors": [
+    "wangyu"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "analyse"
+  ],
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

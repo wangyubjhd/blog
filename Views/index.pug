@@ -1,0 +1,138 @@
+extends layout
+
+block the_body
+    body.user-select
+
+block the_content
+    section.container
+        .content-wrap
+            .content
+                article.excerpt-minic.excerpt-minic-index
+                    h2
+                        span.red 【推荐】
+                        a(target='_blank', href='#') abc第一弹推荐博文
+                    p.note
+                        | 66666666666666666666666666666666666666666666666666
+                .title
+                    h3 最新发布
+                    .more
+                        a(href='http://www.muzhuangnet.com/list/code/', title='IT技术笔记') IT技术笔记
+                        a(href='http://www.muzhuangnet.com/list/share/', title='源码分享') 源码分享
+                        a(href='http://www.muzhuangnet.com/list/news/', title='资讯分享') 资讯分享
+                article.excerpt.excerpt-1(style='')
+                    a.focus(href='#', target='_blank')
+                        img.thumb(data-original='#### article pic', src='articl_pic', style='display: inline;')
+                    header
+                        a.cat(href='444')
+                            | 第一篇博文
+                            i
+                        h2
+                            a(href='＃', target='_blank') abccddddddddddddddddddddddddddddddddd
+                    p.meta
+                        time.time
+                            i.glyphicon.glyphicon-time
+                            |  这里天 时间
+                        span.views
+                            i.glyphicon.glyphicon-eye-open
+                            |  访问量数量这里天蝎
+                        a.comment(href='＃', title='评论', target='_blank')
+                            i.glyphicon.glyphicon-comment
+                            |  评论数量444
+                    p.note
+                        | ddddddfdfdffffffffff555555555555555555555555
+                article.excerpt.excerpt-2(style='')
+                    a.focus(href='#', target='_blank')
+                        img.thumb(data-original='jpgtu pic', src='jpg pic', style='display: inline;')
+                    header
+                        a.cat(href='#')
+                            | titlea hahaha
+                            i
+                        h2
+                            a(href='#', target='_blank') zheshi简洁吧
+                    p.meta
+                        time.time
+                            i.glyphicon.glyphicon-time
+                            |  2016-10-14
+                        span.views
+                            i.glyphicon.glyphicon-eye-open
+                            | 216
+                        a.comment(href='###', title='评论', target='_blank')
+                            i.glyphicon.glyphicon-comment
+                            | 4
+                    p.note
+                        | ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                nav.pagination(style='display: none;')
+                    ul
+                        li.prev-page
+                        li.active
+                            span 1
+                        li
+                            a(href='?page=2') 2
+                        li.next-page
+                            a(href='?page=2') 下一页
+                        li
+                            span 共 2 页
+        aside.sidebar
+            //.fixed
+            //    .widget.widget-tabs
+            //        ul.nav.nav-tabs(role='tablist')
+            //            li.active(role='presentation')
+            //                a(href='#notice', aria-controls='notice', role='tab', data-toggle='tab') 统计信息
+            //            li(role='presentation')
+            //                a(href='#contact', aria-controls='contact', role='tab', data-toggle='tab') 联系站长
+            //        .tab-content
+            //            #notice.tab-pane.contact.active(role='tabpanel')
+            //                h2
+            //                    | 日志总数:
+            //                    | 888篇
+            //                h2
+            //                    | 网站运行:
+            //                    span#sitetime 88天
+            //            #contact.tab-pane.contact(role='tabpanel')
+            //                h2
+            //                    | QQ:
+            //                    a(href='http://wpa.qq.com/msgrd?v=3&uin=577211782&site=qq&menu=yes', target='_blank', rel='nofollow', data-toggle='tooltip', data-placement='bottom', title='', data-original-title='QQ:577211782') 577211782
+            //                h2
+            //                    | Email:
+            //                    a(href='mailto:577211782@qq.com', target='_blank', data-toggle='tooltip', rel='nofollow', data-placement='bottom', title='', data-original-title='Email:577211782@qq.com') 577211782@qq.com
+            //    .widget.widget_search
+            //        form.navbar-form(action='/Search', method='post')
+            //            .input-group
+            //                input.form-control(type='text', name='keyword', size='35', placeholder='请输入关键字', maxlength='15', autocomplete='off')
+            //                span.input-group-btn
+            //                    button.btn.btn-default.btn-search(name='search', type='submit') 搜索
+            .widget.widget_hot
+                h3 最新评论文章
+                ul
+                    li
+                        a(title='用DTcms做一个独立博客网站（响应式模板）', href='http://www.muzhuangnet.com/show/269.html')
+                            span.thumbnail
+                                img.thumb(data-original='http://www.muzhuangnet.com/upload/201610/18/201610181739277776.jpg', src='http://www.muzhuangnet.com/upload/201610/18/201610181739277776.jpg', alt='用DTcms做一个独立博客网站（响应式模板）', style='display: block;')
+                            span.text 用DTcms做一个独立博客网站（响应式模板）
+                            span.muted
+                                i.glyphicon.glyphicon-time
+                                |                     2016-11-01
+                            span.muted
+                                i.glyphicon.glyphicon-eye-open
+                                | 88
+                    li
+                        a(title='用DTcms做一个独立博客网站（响应式模板）', href='http://www.muzhuangnet.com/show/269.html')
+                            span.thumbnail
+                                img.thumb(data-original='http://www.muzhuangnet.com/upload/201610/18/201610181739277776.jpg', src='http://www.muzhuangnet.com/upload/201610/18/201610181739277776.jpg', alt='用DTcms做一个独立博客网站（响应式模板）', style='display: block;')
+                            span.text 用DTcms做一个独立博客网站（响应式模板）
+                            span.muted
+                                i.glyphicon.glyphicon-time
+                                |                     2016-11-01
+                            span.muted
+                                i.glyphicon.glyphicon-eye-open
+                                | 88
+            .widget.widget_sentence
+                a(href='http://web.muzhuangnet.com/', target='_blank', rel='nofollow', title='专业网站建设')
+                    img(style='width: 100%', src='http://www.muzhuangnet.com/upload/201610/24/201610241224221511.jpg', alt='专业网站建设')
+            .widget.widget_sentence
+                a(href='http://www.muzhuangnet.com/show/269.html', target='_blank', rel='nofollow', title='MZ-NetBlog主题')
+                    img(style='width: 100%', src='images/ad.jpg', alt='MZ-NetBlog主题')
+            .widget.widget_sentence
+                h3 友情链接
+                .widget-sentence-link
+                    a(href='http://web.muzhuangnet.com', title='网站建设', target='_blank') 网站建设

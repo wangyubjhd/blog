@@ -1,4 +1,5 @@
 router = require('express').Router();
+Posts = require '../Models/posts.coffee';
 
 router.get '/404', (req, res) ->
   res.render '404'
@@ -18,8 +19,10 @@ router.get '/admin/login', (req, res) ->
 router.get '/admin', (req, res) ->
   res.render 'admin/index'
 
-router.get '/admin/add', (req, res) ->
-  res.render 'admin/add'
+router.post '/admin/add', (req, res) ->
+  M = new Posts
+  data = M.create req.body
+  res.render 'admin/add', {data : data}
 
 router.get '/admin/update', (req, res) ->
   res.render 'admin/update'
